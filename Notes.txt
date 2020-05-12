@@ -1,0 +1,15 @@
+GET: request data from a specific object
+POST: send data to a server to create/update a resource.
+PUT: send data to a server to create/update a resource. Are idempotent. Calling the same PUT 
+request multiple times will always produce the same result.
+HEAD: is almost identical to GET, but without the response body.
+DELETE: method deletes the specified resource.
+
+CRUD operations
+
+Operation           SQL     HTTP	        RESTful WS	DDS	        MongoDB
+Create	           INSERT	PUT/POST	    POST	    write	    Insert
+Read (Retrieve)	   SELECT	GET	            GET	        read / take	Find
+Update (Modify)	   UPDATE	PUT/POST/PATCH	PUT	        write	    Update
+Delete (Destroy)   DELETE	DELETE	        DELETE	    dispose	    Remove
+
