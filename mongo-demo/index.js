@@ -12,7 +12,11 @@ const courseSchema = new mongoose.Schema({
     isPublished: Boolean
 })
 
-// Classes and objects
-// Human, John
+// Classes and objects / Human and John
 
-const course = mongoose.model('Course', courseSchema);
+// Creating a class
+const Course = mongoose.model('Course', courseSchema);
+
+const course = new Course({
+
+});
